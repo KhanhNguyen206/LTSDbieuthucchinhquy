@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT1</title>
+</head>
+<body>
+<script>
+    function isDate(str) {
+        let regexp= /^[0-9]{2}\/{1}[0-9]{2}\/{1}[0-9]{4}$/;
+        if(regexp.test(str)){
+            return "Đúng định dạng ngày tháng";
+        }else {
+            return "Không đúng định dạng ngày tháng";
+        }
+    }
+
+    console.log(isDate("27/12/2011"));
+    console.log(isDate("27-12-2011"));
+    console.log(isDate("ab/cd/defg"));
+
+</script>
+</body>
+</html>

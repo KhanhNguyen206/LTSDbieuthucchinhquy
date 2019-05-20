@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT2</title>
+</head>
+<body>
+<script>
+    function countWords(str) {
+        let arr=str.split(" ");
+        let regexp= /^[a-zA-Z]+$/;
+        let count=0;
+        for (i=0; i<arr.length; i++){
+            if(regexp.test(arr[i])){
+                count+=1;
+            }
+        }
+        console.log(count);
+    }
+
+    countWords("Day la mot chuoi");
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT4</title>
+</head>
+<body>
+<script>
+    function checkPass(str) {
+        let regexp= /^[a-zA-Z0-9]{6,32}/;
+        if (regexp.test(str)){
+            return "Password hợp lệ";
+        } else {
+            return "Password không hợp lệ";
+        }
+    }
+
+    console.log(checkPass("Password"));
+    console.log(checkPass("matkhau"));
+    console.log(checkPass("mk"));
+    console.log(checkPass(".matkhau."));
+    console.log(checkPass("matkhau123"));
+</script>
+</body>
+</html>
